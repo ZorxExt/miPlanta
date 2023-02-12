@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style_contact.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+
+    <title>MiPlanta</title>
+</head>
+
+
+<body>
+
+    <div class="container">
+        <header>
+            <nav>
+                <ul class="nav__ul">
+                    <li class="nav__li" id="MiPlanta"> <h1><a href="index.html">mi<b>Planta</b></a></h1></li>
+                    <li class="nav__li" id="Servicio"><a href="">Servicio</a></li>
+                    <li class="nav__li" id="Blog"><a href="">Blog</a></li>
+                    <li class="nav__li" id="Contacto"><a href="">Contacto</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="contact-all">
+            <div class="contact-form">
+                <form action="" method="post">
+            
+                    <p>
+                        <label for="nombre">Nombre y Apellido</label>
+                        <input type="text" id="nombre">
+                    </p>
+                    <p class="email">
+                        <label for="email">Email</label>
+                        <input type="text" id="email">
+                    </p>
+                    <p class="motivo">
+                        <label for="motivo">Motivo</label>
+                        <select name="motivos" id="motivo">
+                        <option value="medico">Medico</option>
+                        <option value="legal">Legal</option>
+                        </select>
+                     </p>      
+                    <p>   
+                        <label for="descripcion">Descripcion</label>
+                        <textarea id="descripcion" cols="25" rows="7"></textarea>
+                    </p>   
+  
+                    <p class="boton">
+                        <button type="submit">
+                            <img src="IMG/enviar.png" alt=""> Enviar
+                        </button>
+                    </p>
+                    <div class="contact-data">
+                    </div>
+                </form>
+            </div>
+            <div class="aside">
+        </div>
+        
+
+
+    </div>
+
+
+</body>
+</html>
