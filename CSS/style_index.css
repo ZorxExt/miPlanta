@@ -218,7 +218,7 @@ nav ul li a:hover{
 .servicio-grid_container > .servicio-grid_child > div > img{
     margin: auto;
     display: block;
-    width: 100px;
+    min-width: 20px;
 }
 
 .servicio-grid_container > .servicio-grid_child > p{
@@ -284,6 +284,8 @@ nav ul li a:hover{
 
     .servicio-grid_container{
         display: block;
+        font-size: 4vw;
+        padding-bottom: 0;
     }
     .servicio-grid_container > .servicio-grid_child > div{
         align-self: flex-start;
