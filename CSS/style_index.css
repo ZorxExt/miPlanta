@@ -1,6 +1,9 @@
 body{
     overflow-x: hidden;
-    background-color: #4c966f;
+    background-color: #049144;
+    background-image: url(../IMG/cannabis2.jpg);
+    background-attachment: fixed;
+    background-blend-mode: multiply;
 }
 
 b{
@@ -84,12 +87,12 @@ nav ul li a:hover{
 .title{
     font-family: 'Cairo';
     color:white;
-    background-color: #049144;
+    background-color: #014620;
     border-bottom: #049144 2px solid;
     border-top-left-radius: 8px ;
     border-top-right-radius: 8px ;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    background-image: url(../IMG/cannabis2.jpg);
+    background-image: url(../IMG/cannabis.jpg);
     background-position: left bottom;
     background-blend-mode: multiply;
 }
@@ -100,7 +103,7 @@ nav ul li a:hover{
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 1px 0;
-    background-color: #4c966f2d;
+    background-color: #00000070;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 1);
     text-align: center;
@@ -193,7 +196,7 @@ nav ul li a:hover{
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     font-family: 'Cairo';
     font-size: 25px;
     padding: 30px;
@@ -226,6 +229,21 @@ nav ul li a:hover{
     background-color: #4c966f2d;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.chala{
+    grid-row: 1/2;
+}
+.casa{
+    grid-row: 2/3;
+    grid-column: 2;
+}
+.hoja{
+    grid-row: 3/4;
+}
+.check{
+    grid-row: 4/5;
+    grid-column: 2;
 }
 
 
