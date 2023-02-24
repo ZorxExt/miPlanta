@@ -190,60 +190,78 @@ nav ul li a:hover{
     border-radius: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 1);
     background-color: #dfece6;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .servicio-grid_container{
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 4px 1fr;
     font-family: 'Cairo';
     font-size: 25px;
-    padding: 30px;
     padding-left: 15px;
-    column-gap: 20px;
+    padding-right: 15px;
+    
 }
 
 .servicio-grid_container > .servicio-grid_child{
     display: flex;
-    align-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 .servicio-grid_container > .servicio-grid_child > div{
     padding: 20px;
     border-radius: 100%;
     background-color:#4c966f;
-    margin-right: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 1);
-    width: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .servicio-grid_container > .servicio-grid_child > div > img{
     margin: auto;
     display: block;
     min-width: 20px;
+    width: 40px;
 }
 
 .servicio-grid_container > .servicio-grid_child > p{
     padding: 20px;
+    margin: 0;
+    margin-top: 25px;
     background-color: #4c966f2d;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    max-width: 550px;
+
+
+}
+.middle{
+    position: relative;
+    background-color: #b3aca3;
+    top: 7px;
+    grid-column: 2;
 }
 
 .chala{
-    grid-row: 1/2;
+    flex-direction: row-reverse;
+
 }
+
+
 .casa{
-    grid-row: 2/3;
-    grid-column: 2;
+    grid-row: 2;
+    grid-column: 3;
 }
 .hoja{
-    grid-row: 3/4;
+    grid-row: 3;
+    grid-column: 1;
+    flex-direction: row-reverse;
 }
+
 .check{
-    grid-row: 4/5;
-    grid-column: 2;
+    grid-row: 4;
+    grid-column: 3;
 }
 
 
@@ -311,6 +329,22 @@ nav ul li a:hover{
     .servicio-grid_container > .servicio-grid_child > p{
         margin: 0;
         margin-bottom: 50px;
+    }
+
+    .chala > .img_container{
+        margin-right: 0px !important;
+    }
+    
+    .casa > div{
+        margin-left: 0 !important;
+    }
+    
+    .hoja > div{
+        margin-right: 0px !important;
+    }
+    
+    .check > div{
+        margin-left: 0 !important;
     }
 }
 
