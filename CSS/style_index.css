@@ -1,6 +1,6 @@
 body{
     overflow-x: hidden;
-    background-color: #049144;
+    background-color: #054b24;
     background-image: url(../IMG/cannabis2.jpg);
     background-attachment: fixed;
     background-blend-mode: multiply;
@@ -84,31 +84,6 @@ nav ul li a:hover{
     flex-direction: column;
 }
 
-.title{
-    font-family: 'Cairo';
-    color:white;
-    background-color: #014620;
-    border-bottom: #049144 2px solid;
-    border-top-left-radius: 8px ;
-    border-top-right-radius: 8px ;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    background-image: url(../IMG/cannabis.jpg);
-    background-position: left bottom;
-    background-blend-mode: multiply;
-}
-
-.title_container{
-    max-width: 500px;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 1px 0;
-    background-color: #00000070;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
-    text-align: center;
-}
-
 
 .title > .title_container > h2 {
     margin: 0;
@@ -122,64 +97,79 @@ nav ul li a:hover{
     font-variant: small-caps;
 }
 
-.articles_container{
+.start_container{
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-.p_containter{
-    font-family: 'Cairo';
-    font-size: 25px;
-    background-color: #4c966f2d;
-    border-left: #4c966f solid 5px;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    margin: 40px 100px 40px 100px;
-    padding: 20px;
-}
-.p_containter > p{
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-    width: 90%;
-    padding-left: 20px;
-}
-.p_containter > img{
-    width: 50px;
-    float:left;
-    padding-top: 20px;
-
-}
-.links{
-    max-width: 1500px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding-top: 30px;
 }
 
-.btn_servicio, .btn_contacto{
+.start-text-container{
+    max-width: 650px;
+    justify-self: flex-start;
+    padding-top: 30px;
+}
+.start-text-container > h2{
+    font-family: Cairo;
+    font-variant: small-caps;
+    margin: 0;
+    padding: 0;
+    font-size: 4rem;
+}
+.start-text-container > h2 > small{
+    font-size: 3rem;
+}
+.start-text-container > h4{
+    max-width: 450px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: Cairo;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: #4c966f2d;
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    
+}
+
+.start-image{
+    border-right: 3px #4c966f solid;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 1);
+}
+
+.links{
+    display: flex;
+    margin-top: 50px;
+}
+
+.btn_start, .btn_contacto{
     font-family: 'Cairo';
     font-size: 30px;
     text-decoration: none;
     color: black;
     padding: 10px 20px 10px 20px;
     margin: 0 20px 0 20px;
-    background-color: rgb(6, 190, 89);
-    border-radius: 30px;
+    background-color: hwb(147 2% 25%);
     box-shadow: 0 0 5px rgba(0, 0, 0, 1);
     display: flex;
     align-items: center;
     justify-content: space-between;
     transition: all 0.4s ease 0s;
 }
-.btn_servicio:hover, .btn_contacto:hover {
+
+.btn_contacto:hover, .btn_start:hover {
     background-color: white;
     font-size: 32px;
 }
-.btn_servicio > img , .btn_contacto > img{
+.btn_contacto > img , .btn_start > img{
     width: 1em;
     height: 1em;
     margin-right: 0.2em;
 }
+
 
 
 .servicio{
@@ -190,8 +180,6 @@ nav ul li a:hover{
     border-radius: 20px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 1);
     background-color: #dfece6;
-    padding-top: 30px;
-    padding-bottom: 30px;
 }
 
 .servicio-grid_container{
@@ -208,6 +196,8 @@ nav ul li a:hover{
 .servicio-grid_container > .servicio-grid_child{
     display: flex;
     align-items: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .servicio-grid_container > .servicio-grid_child > div{
     padding: 20px;
@@ -238,8 +228,7 @@ nav ul li a:hover{
 }
 .middle{
     position: relative;
-    background-color: #b3aca3;
-    top: 7px;
+    background-color: #c9c9c9;
     grid-column: 2;
 }
 
@@ -304,13 +293,8 @@ nav ul li a:hover{
         border-radius: 0;
         margin-top: 0px;
     }
-    
-    .title{
-        border-radius: 0;
-    }
-
-    .p_containter > p{
-        padding-left: 0;
+    .start-image{
+        display: none;
     }
 
     .servicio{
@@ -350,43 +334,31 @@ nav ul li a:hover{
 
 @media (max-width:750px){
     
-    .title > .title_container > h2 {
+    .start-text-container{
+        display: block;
+        padding-top: 0;
+        margin: auto;
+    }
+    .start-text-container > h2{
+        font-size: 8vw;
         text-align: center;
-        padding-left: 0px;
-        margin: 0;
+    }
+    .start-text-container > h2 > small{
         font-size: 6vw;
-        margin-top: 10px;
-        margin-bottom: 20px;
     }
-    .title > .title_container > h3 {
-        text-align: center;
-        padding-left: 0px;
-        margin: 0;
-        font-size: 4vw;
-        margin-bottom: 10px;
-    }
-    .title_container{
-        border: none;
-        border-radius: 0;
-    }
-
-    .p_containter{
-        margin: 40px 20px 40px 20px;
-    }
-    .p_containter > p{
-        width: 100%;
-        text-align: center;
-        font-size: 4vw;
-    }
-    
-    .p_containter > img{
-        float:none;
+    .start-text-container > h4 {
         display: block;
         margin: auto;
-        padding: 0;
-        padding-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 4vw;
     }
-    .btn_servicio, .btn_contacto{
+
+    .links{
+        justify-content: center;
+    }
+    .btn_start, .btn_contacto{
         font-size: 4vw;
     }
 
