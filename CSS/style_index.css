@@ -14,7 +14,6 @@ header{
     margin: auto;
     background-color: #dfece6;
     box-shadow: 0px 0px 60px black;
-    border-bottom: 2px solid black;
 }
 
 nav{
@@ -149,7 +148,7 @@ nav ul li a:hover{
     color: black;
     padding: 10px 20px 10px 20px;
     margin: 0 20px 0 20px;
-    background-color: hwb(147 2% 25%);
+    background-color: #05bf59;
     box-shadow: 0 0 5px rgba(0, 0, 0, 1);
     display: flex;
     align-items: center;
@@ -199,7 +198,7 @@ nav ul li a:hover{
 .servicio-grid_container > .servicio-grid_child > div{
     padding: 20px;
     border-radius: 100%;
-    background-color:#4c966f;
+    background-color:#049144;
     box-shadow: 0 0 5px rgba(0, 0, 0, 1);
     margin-left: 10px;
     margin-right: 10px;
@@ -253,9 +252,12 @@ nav ul li a:hover{
 
 @media (max-width: 900px){
     
+    body{
+        background-color: #0da350;
+    }
+    
     header{
         border-radius: 0;
-        border-bottom: 2px solid #049144;
     }
     nav{
         margin: 0;
@@ -289,7 +291,8 @@ nav ul li a:hover{
     .main_page{
         border-radius: 0;
         padding: 20px 0 20px 0;
-        margin: 0;
+        margin: 30px 0 30px 0;
+        box-shadow: 0 0 10px #ffffff71 ;
     }
     .start-image{
         display: none;
