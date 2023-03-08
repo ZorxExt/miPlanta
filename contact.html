@@ -36,30 +36,30 @@
         
         <div class="contact-all">
             <div class="contact-form">
-                <form action="" method="post">
+                <form action="contact.php" method="post" class="needs-validation">
             
                     <p>
                         <label for="nombre">Nombre y Apellido</label>
-                        <input type="text" id="nombre">
+                        <input type="text" id="nombre" name="name" required>
                     </p>
                     <p class="email">
                         <label for="email">Email</label>
-                        <input type="text" id="email">
+                        <input type="text" id="email" name="email" required>
                     </p>
                     <p class="motivo">
                         <label for="motivo">Motivo</label>
-                        <select name="motivos" id="motivo">
+                        <select name="motivo" id="motivo" required>
                         <option value="medico">Medico</option>
                         <option value="legal">Legal</option>
                         </select>
                      </p>      
                     <p>   
                         <label for="descripcion">Descripcion</label>
-                        <textarea id="descripcion" cols="25" rows="7"></textarea>
+                        <textarea id="descripcion" cols="25" rows="7" name="text" required></textarea>
                     </p>   
   
                     <p class="boton">
-                        <button type="submit">
+                        <button type="submit" name="register">
                             <img src="IMG/enviar.png" alt=""> Enviar
                         </button>
                     </p>
@@ -70,9 +70,6 @@
             <div class="aside">
             </div>
         </div>
-        
-
-
     </div>
 
 
