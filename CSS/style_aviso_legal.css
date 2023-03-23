@@ -73,78 +73,39 @@ nav ul li a:hover{
     max-width: 1500px;
     margin: auto;
     margin-top: 150px;
-    margin-bottom: 150px;
+    margin-bottom: 30px;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 1);
     background-color:#dfece6;
     display: flex;
     flex-direction: column;
-    padding: 100px 0 100px 0;
-    font-family: Cairo;
+    padding: 0 0 50px 0;
 }
 
-.start_container{
-    display: flex;
-    justify-content: space-evenly;
-
+.main_head{
+    max-width: 1500px;
+    height: 200px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    background-color:#0da350bd;
+    background-image: url(../IMG/cannabis2.jpg);
+    background-blend-mode: multiply;
+    background-position: center;
 }
-
-.start-text-container{
-    max-width: 650px;
-    justify-self: flex-start;
-    padding-top: 50px;
-}
-.start-text-container > h2{
-    font-family: Cairo;
-    font-variant: small-caps;
-    margin: 0;
-    padding: 0;
-    font-size: 4rem;
-}
-.start-text-container > h2 > small{
-    font-size: 3rem;
-}
-
-.start-image{
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-radius: 30px;
-    box-shadow: 1px 0 5px rgba(0, 0, 0, 1);
-    width: 330px;
-    height: 330px;
-}
-
-.links{
-    display: flex;
-    margin-top: 50px;
-}
-.start-image-small{
-    display: none;
-}
-.start-image-big{
-    display: block;
-}
-.prox{
+article{
     font-family: 'Cairo';
-    font-size: 30px;
-    text-decoration: none;
-    color: black;
-    padding: 10px 20px 10px 20px;
-    margin: 0 20px 0 20px;
-    background-color: #05bf59;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: all 0.4s ease 0s;
-    margin-left: 90px;
+    padding: 30px;
+    padding-top: 0;
+    text-align: justify;
+}
+article > h3{
+    font-size: 2rem;
+    color:#054b24;
+}
+article > p{
+    font-size: 1.1rem;
 }
 
-.prox > img{
-    width: 1em;
-    height: 1em;
-    margin-right: 0.2em;
-}
 
 footer{
     background-color: #0491443d;
@@ -214,44 +175,57 @@ footer > p > a:hover{
         margin: 40px 0 40px 0;
         box-shadow: 0 0 5px #ffffff ;
     }
-    .start_container{
-        display: block;
-        margin: auto;
-        padding: 0;
-    }
     .start-image{
-        width: 30vw;
-        height: 30vw;
-        display: block;
-        margin: auto;
-        margin-top: 40px;
-    }
-    .start-text-container{
-        text-align: center;
+        display: none;
     }
 
-    .start-text-container > h2{
-        font-size: 8vw;
-        text-align: center;
-    }
-    .start-text-container > h2 > small{
-        font-size: 6vw;
-    }
-    .prox{
-        margin: 0;
-    }
-    .links{
-        justify-content: center;
-    }
-    .start-image-small{
-        display: block;
-    }
-    .start-image-big{
+    .next{
         display: none;
+    }
+    .servicio{
+        border-radius: 0;
+        margin-top: 10px;
+    }
+
+    .servicio-grid_container{
+        display: block;
+        font-size: 4vw;
+        padding-bottom: 0;
+    }
+    .servicio-grid_container > .servicio-grid_child > div{
+        align-self: flex-start;
+    }
+    .servicio-grid_container > .servicio-grid_child > p{
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
+    .chala > .img_container{
+        margin-right: 0px !important;
+    }
+    
+    .casa > div{
+        margin-left: 0 !important;
+    }
+    
+    .hoja > div{
+        margin-right: 0px !important;
+    }
+    
+    .check > div{
+        margin-left: 0 !important;
     }
 }
 
 @media (max-width:750px){
     
+    .main_head{
+        display: none;
+    }
+    article > h3{
+        font-size: 1.4rem;
+        color:#054b24;
+    }
+
 
 }

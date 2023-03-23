@@ -17,7 +17,7 @@ if (isset($_POST['register'])){
         $resultado = mysqli_query($con,$sql);
         
         if($resultado){
-            echo file_get_contents("index.html");
+            echo file_get_contents("successful.html");
         }
         else
         {

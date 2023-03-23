@@ -44,7 +44,7 @@ nav ul li a:hover{
 .nav__ul{
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: baseline;
 }
 
 
@@ -188,7 +188,28 @@ nav ul li a:hover{
     box-shadow: -2px 0 10px rgba(0, 0, 0, 1);
 }
 
-
+footer{
+    background-color: #0491443d;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 40px;
+}
+footer > p{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Cairo';
+    font-size: 1.2rem;
+    color: #c9c9c9;
+}
+footer > p > a{
+    color: #4c966f;
+    text-decoration: none;
+}
+footer > p > a:hover{
+    text-decoration: underline;
+}
 
 
 
@@ -236,7 +257,7 @@ nav ul li a:hover{
         margin-bottom: 0px; 
     }
     
-    p{
+    .contact-form form p{
         font-family: 'Cairo';
         font-size: 5vw;
         font-variant: small-caps;

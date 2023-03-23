@@ -73,7 +73,7 @@ nav ul li a:hover{
     max-width: 1500px;
     margin: auto;
     margin-top: 150px;
-    margin-bottom: 150px;
+    margin-bottom: 30px;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 1);
     background-color:#dfece6;
@@ -163,6 +163,10 @@ nav ul li a:hover{
     margin-right: 0.2em;
 }
 
+.next{
+    width: 80px;
+    margin: auto;
+}
 
 
 .servicio{
@@ -246,6 +250,28 @@ nav ul li a:hover{
     grid-column: 3;
 }
 
+footer{
+    background-color: #0491443d;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+footer > p{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Cairo';
+    font-size: 1.2rem;
+    color: #c9c9c9;
+}
+footer > p > a{
+    color: #4c966f;
+    text-decoration: none;
+}
+footer > p > a:hover{
+    text-decoration: underline;
+}
+
 
 @media (max-width: 900px){
     
@@ -296,6 +322,9 @@ nav ul li a:hover{
         display: none;
     }
 
+    .next{
+        display: none;
+    }
     .servicio{
         border-radius: 0;
         margin-top: 10px;
