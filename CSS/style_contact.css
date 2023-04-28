@@ -71,13 +71,15 @@ nav ul li a:hover{
 
 .container{
     height: 100vh;
+
 }
+
 
 
 .contact-all{
     max-width: 1500px;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 100px;
 
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -171,7 +173,7 @@ nav ul li a:hover{
 .contact-form form button:hover{
     background-color: white;
     color: black;
-    font-size: 32px;
+    transform: scale(1.02);
 }
 
 .contact-data{
@@ -193,7 +195,9 @@ footer{
     margin-top: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
-    margin-top: 40px;
+    margin-top: 90px;
+
+
 }
 footer > p{
     margin: 0;

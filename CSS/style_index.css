@@ -76,7 +76,7 @@ nav ul li a:hover{
 .main_page{
     max-width: 1500px;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 100px;
     margin-bottom: 30px;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 1);
@@ -149,8 +149,8 @@ nav ul li a:hover{
 
 
 .btn_start1:hover {
-    background-color: white;
-    font-size: 2.05rem;
+    background-color: white;  
+    transform: scale(1.02);
     cursor: pointer;
 }
 
@@ -215,7 +215,7 @@ nav ul li a:hover{
 
 .btn_si:hover, .btn_no:hover{
     background-color: white;
-    font-size: 2.05em;
+    transform: scale(1.02);
     cursor: pointer;
 
 }
@@ -288,7 +288,7 @@ nav ul li a:hover{
 
 .btn_si2:hover , .btn_tuto:hover{
     background-color: white;
-    font-size: 2.05rem;
+    transform: scale(1.02);
 }
 
 
