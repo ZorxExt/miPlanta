@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;800&display=swap" rel="stylesheet">
 
+    <script src="JS/scripts.js"></script>
+
 
     <title>MiPlanta</title>
 </head>
@@ -26,7 +28,7 @@
             <nav>
                 <ul class="nav__ul">                
                     <li class="nav__li" id="MiPlanta"> <h1><a href="index.html">mi<b>Planta</b></a></h1></li>
-                    <li class="nav__li" id="Servicio"><a href="#servicio">Servicio</a></li>
+                    <li class="nav__li" id="Servicio"><a href="aviso_legal.html">Nosotros</a></li>
                     <li class="nav__li" id="Blog"><a href="blog.html">Comunidad</a></li>
                     <li class="nav__li" id="Contacto"><a href="contact.html">Contacto</a></li>
                 </ul>
@@ -35,20 +37,46 @@
         
         <div class="main_page">
             <div class="start_container">
-                <div class="start-text-container">
+                
+                <div class="start-new-container" id="startNEW-container">
                     <h2>Sumate al <b>REPROCANN</b><br> <small>con nuestro asesoriamiento</small></h2>
 
                     <h4>Somos una red de profesionales actualizados con los procedimientos médicos más avanzados y las regulaciones más recientes.</h4>
 
                     <div class="links">
-                        <a href="contact.html" class="btn_contacto"><img src="IMG/clip.png" alt="">Normativa</a>
-                        <a href="https://forms.gle/e9JUfGeSFvZyonkz9" target="_blank" class="btn_start"><img src="IMG/flecha.png" alt="">Comenza Ya!</a>
+                        <button onclick="start()" class="btn_start1"><img src="IMG/flecha.png" alt="">Comenza Ya!</button>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                
+                <div class="start-text-container" id="startTXT-container">
+                    <h2>Vamos a necesitar tu codigo de vinculacion</h2>
+                    <div> 
+                        <a class="btn_si" href="https://forms.gle/oNLskdWbHD2DULRLA" target="_blank">YA LO TENGO!</a>
+                        <button onclick="info()" class="btn_no" href="">QUE ES ESO?</button>
                     </div>
                 </div>
 
+                
+                <div class="about-code-container" id="aboutCODE-container">
+
+                    <h2>Es un codigo proporcionado por el Ministerio de Salud necesario para el personal medico </h2>
+                    <h2>Se puede conseguir accediendo a la pagina <a href="https://reprocann.msal.gob.ar" target="_blank">REPROCANN</a> con la cuenta miArgentina en menos de 5 minutos! </h2>
+
+                    <div class="btns">
+                        <div> <a class="btn_tuto" href="FILES/TutorialCDV.pdf" target="_blank"><img src="IMG/reprocannICO.png" alt="">Tutorial</a></div>
+                        <div> <a class="btn_si2" href="https://forms.gle/oNLskdWbHD2DULRLA" target="_blank"><img src="IMG/check.png" alt="">Ya lo tengo!</a></div>
+                    </div>
+
+
+                </div>
+
+
                 <img class= "start-image" src="IMG/happy_girl.jpg" alt="">
-
-
             </div>
         </div>
 

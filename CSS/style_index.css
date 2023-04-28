@@ -5,6 +5,10 @@ body{
     background-attachment: fixed;
     background-blend-mode: multiply;
 }
+a{
+    
+    color: #049144;
+}
 
 b{
     color: #049144;
@@ -88,22 +92,25 @@ nav ul li a:hover{
 
 }
 
-.start-text-container{
+.start-new-container{
     max-width: 650px;
     justify-self: flex-start;
     padding-top: 30px;
+
+
+    display: block;
 }
-.start-text-container > h2{
+.start-new-container > h2{
     font-family: Cairo;
     font-variant: small-caps;
     margin: 0;
     padding: 0;
     font-size: 4rem;
 }
-.start-text-container > h2 > small{
+.start-new-container > h2 > small{
     font-size: 3rem;
 }
-.start-text-container > h4{
+.start-new-container > h4{
     max-width: 450px;
     margin-left: 20px;
     margin-top: 20px;
@@ -116,6 +123,173 @@ nav ul li a:hover{
     
 }
 
+
+.links{
+    display: flex;
+    margin-top: 50px;
+}
+
+.btn_start1{
+    font-family: 'Cairo';
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px 10px 20px;
+    margin: 0 20px 0 100px;
+    background-color: #05bf59;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.4s ease 0s;
+    border-radius: 5px;
+    border: none;
+}
+
+
+
+.btn_start1:hover {
+    background-color: white;
+    font-size: 2.05rem;
+    cursor: pointer;
+}
+
+
+
+.btn_start1 > img{
+    width: 1em;
+    height: 1em;
+    margin-right: 0.2em;
+}
+
+
+
+
+
+
+
+
+
+
+.start-text-container{
+    font-family: Cairo;
+    text-align: center;
+    margin-left: -80px;
+    display: none;
+    width: 42%;
+    margin: 0 10px;
+
+}
+.start-text-container > h2{
+    font-size: 2em;
+    margin-bottom: 50px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #05bf59;
+}
+.start-text-container > div{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 30px;
+}
+
+
+.btn_si, .btn_no {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    padding: 10px 20px 10px 20px;
+    margin: 35px;
+    font-size: 2em;
+    background-color: #05bf59;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    transition: all 0.4s ease 0s;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn_si:hover, .btn_no:hover{
+    background-color: white;
+    font-size: 2.05em;
+    cursor: pointer;
+
+}
+
+.about-code-container{
+    width: 42%;
+    font-family: Cairo;
+    display: none;
+}
+.about-code-container > h2{
+    font-weight: 700;
+    margin: 50px 0;
+    border-left: #05bf59 solid 2px;
+    padding-left: 20px;
+}
+
+.about-code-container > h4{
+    font-size: 1.2em;
+    margin-bottom: 50px;
+}
+
+
+
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 80px;
+    margin-left: -50px;
+    align-items: center;
+}
+
+
+.btn_si2{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    padding: 10px 30px 10px 30px;
+    font-size: 2rem;
+    background-color: #05bf59;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    transition: all 0.4s ease 0s;
+    border-radius: 5px;
+}
+.btn_si2 > img{
+    width: 1em;
+    height: 1em;
+    margin-right: 0.2em;
+}
+.btn_tuto{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 400;
+    color: black;
+    padding: 10px 30px 10px 30px;
+    font-size: 2rem;
+    background-color: #05bf59;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    transition: all 0.4s ease 0s;
+    border-radius: 5px;
+}
+.btn_tuto > img{
+    width: 1em;
+    height: 1em;
+    margin-right: 0.2em;
+}
+
+.btn_si2:hover , .btn_tuto:hover{
+    background-color: white;
+    font-size: 2.05rem;
+}
+
+
+
+
 .start-image{
     border-right: 3px #4c966f solid;
     border-top-left-radius: 30px;
@@ -123,18 +297,14 @@ nav ul li a:hover{
     box-shadow: -2px 0 5px rgba(0, 0, 0, 1);
 }
 
-.links{
-    display: flex;
-    margin-top: 50px;
-}
 
-.btn_start, .btn_contacto{
+.btn_start{
     font-family: 'Cairo';
-    font-size: 30px;
+    font-size: 2rem;
     text-decoration: none;
     color: black;
-    padding: 10px 20px 10px 20px;
-    margin: 0 20px 0 20px;
+    padding: 10px 30px 10px 20px;
+    margin: 0 20px 0 100px;
     background-color: #05bf59;
     box-shadow: 0 0 5px rgba(0, 0, 0, 1);
     display: flex;
@@ -143,25 +313,6 @@ nav ul li a:hover{
     transition: all 0.4s ease 0s;
 }
 
-.btn_contacto{
-    font-size: 25px;
-    padding: 8px 18px 8px 18px;
-}
-
-.btn_contacto:hover, .btn_start:hover {
-    background-color: white;
-    font-size: 32px;
-}
-
-.btn_contacto:hover{
-    font-size: 27px;
-}
-
-.btn_contacto > img , .btn_start > img{
-    width: 1em;
-    height: 1em;
-    margin-right: 0.2em;
-}
 
 .next{
     width: 80px;
@@ -296,7 +447,7 @@ footer > p > a:hover{
     .nav__li{
         margin: 5px;
         padding: 5px;
-        font-size: 4vw;
+        font-size: 5vw;
         margin-right: 0;
     }
     .nav__li:first-child{
@@ -321,6 +472,35 @@ footer > p > a:hover{
     .start-image{
         display: none;
     }
+    
+    .start-new-container{
+        text-align: center;
+    }
+
+    .start-new-container > h2{
+        font-size: 8.5vw;
+        margin-bottom: 30px;
+    }
+
+    .start-new-container > h2 > small{
+        font-size: 80%;
+    }
+    .start-new-container > h4{
+        margin: auto;
+    }
+    .btn_start1{
+        margin: auto;
+    }
+
+    .start-text-container{
+        width: 100%;
+    }
+
+    .about-code-container{
+        width: 100%;
+        margin: 0px 30px;
+    }
+
 
     .next{
         display: none;
@@ -332,7 +512,7 @@ footer > p > a:hover{
 
     .servicio-grid_container{
         display: block;
-        font-size: 4vw;
+        font-size: 5vw;
         padding-bottom: 0;
     }
     .servicio-grid_container > .servicio-grid_child > div{
@@ -363,7 +543,6 @@ footer > p > a:hover{
 @media (max-width:750px){
     
     .start-text-container{
-        display: block;
         padding-top: 0;
         margin: auto;
     }
@@ -389,6 +568,34 @@ footer > p > a:hover{
     }
     .btn_start, .btn_contacto{
         font-size: 4vw;
+        
     }
 
+
+
+
+    .about-code-container{
+        text-align: center;
+    }
+
+    .about-code-container > h2{
+
+        margin: 15px 5px;
+        padding: 0;
+        border: none;
+        font-size: 5vw;
+    }
+
+    .about-code-container > .btns{
+        margin: 0;
+        margin-top: 30px;
+        gap: 0;
+        justify-content: space-evenly;
+    }
+    .btn_si2{
+        font-size: 5vw;
+    }
+    .btn_tuto{
+        font-size: 5vw;
+    }
 }
