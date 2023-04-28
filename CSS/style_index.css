@@ -165,12 +165,6 @@ nav ul li a:hover{
 
 
 
-
-
-
-
-
-
 .start-text-container{
     font-family: Cairo;
     text-align: center;
@@ -207,6 +201,16 @@ nav ul li a:hover{
     transition: all 0.4s ease 0s;
     border-radius: 5px;
     border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.btn_si > img, .btn_no > img{
+    width: 1em;
+    height: 1em;
+    margin-right: 0.2em;
 }
 
 .btn_si:hover, .btn_no:hover{
@@ -498,7 +502,7 @@ footer > p > a:hover{
 
     .about-code-container{
         width: 100%;
-        margin: 0px 30px;
+        margin: 0px 5px;
     }
 
 
@@ -542,37 +546,19 @@ footer > p > a:hover{
 
 @media (max-width:750px){
     
-    .start-text-container{
-        padding-top: 0;
-        margin: auto;
+    
+    .start-text-container > div{
+        margin: 0 20px;
     }
-    .start-text-container > h2{
-        font-size: 8vw;
-        text-align: center;
-    }
-    .start-text-container > h2 > small{
+
+
+    .btn_si, .btn_no{
+        margin:0;
         font-size: 6vw;
     }
-    .start-text-container > h4 {
-        display: block;
-        margin-top: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin: auto;
-        font-size: 4vw;
-        text-align: center;
+    .btn_si{
+        margin-bottom: 30px;
     }
-
-    .links{
-        justify-content: center;
-    }
-    .btn_start, .btn_contacto{
-        font-size: 4vw;
-        
-    }
-
-
-
 
     .about-code-container{
         text-align: center;
