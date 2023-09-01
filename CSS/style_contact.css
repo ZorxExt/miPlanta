@@ -71,76 +71,67 @@ nav ul li a:hover{
 
 .container{
     height: 100vh;
-
 }
 
-
-
-.contact-all{
+.main_page{
     max-width: 1500px;
     margin: auto;
     margin-top: 100px;
-
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0px 0px 40px black;
+    margin-bottom: 150px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    background-color: #dfece6;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px 100px 20px;
+    font-family: Cairo;
 }
-
-.contact-form form{
-    display: grid;
-    padding: 30px;
-    grid-template-columns: 1fr 1fr;
-    background-color: #dfece6
+.main_page > h2{
+    font-size: 40px;
+    text-align: center;
 }
-
-.contact-form form p{
-    font-family: 'Cairo';
-    font-variant: small-caps;
-    font-size: 25px;
-    margin: 0;
-    padding: 10px;
-
+.main_page  > div > div > p{
+    font-size: 30px;
 }
-.contact-form form p label{
-    display: block;
-}
-.contact-form form p input{
-    width: 380px;
+.preform-1{
+    display: flex;
+    background-color: #4c966f2d;
+    border-radius: 8px 0 0 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    border: none;
-    border-radius: 7px;
-    outline: 0;
-
 }
-#email{
-    width: 450px;
-}
-
-.contact-form form p textarea{
-    width: 380px;
-    resize: none;
+.preform-1_text{
+    background-color: #4c966f2d;
+    border-radius: 8px 0 0 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    border: none;
-    border-radius: 7px;
-    outline: 0;
+    padding-left: 10px;
+    height: 100%;
+}
+.preform-img{
+    width: 1000px;
+    transform: scale(0.95);
+    background-image: url(../IMG/agricultores-tienen-arboles-marihuana-cannabis-sus-granjas11.jpg);
+    background-size: cover;
+    border-radius:8px;
+}
+.notice{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #049144;
+    padding: 0 10px 0 10px;
+    
 }
 
-.contact-form form p select{
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    border: none;
-    border-radius: 7px;
-}
 
-.contact-form form .motivo{
-    grid-column: 1 / 3;
-}
-.contact-form form .boton{
+
+form .boton{
     align-self: center;
     justify-self: center;
 }
-.contact-form form button{
+form button{
     width: 200px;
     padding: 20px 0;
     margin-right: 140px;
@@ -164,31 +155,21 @@ nav ul li a:hover{
     transition: all 0.4s ease 0s;
 }
 
-.contact-form form button img {
+form button img {
     width: 1em;
     height: 1em;
     margin-right: 0.2em;
 }
 
-.contact-form form button:hover{
+form button:hover{
     background-color: white;
     color: black;
     transform: scale(1.02);
 }
 
-.contact-data{
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 2;
-    font-family: 'Cairo';
-}
 
 
 
-.aside{
-    background-color: #0491441c;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 1);
-}
 
 footer{
     background-color: #0491443d;
@@ -220,9 +201,6 @@ footer > p > a:hover{
 
 @media (max-width: 1200px){
 
-    .aside > img{
-        display: none;
-    }
 }
 
 @media (max-width: 900px){
@@ -259,51 +237,5 @@ footer > p > a:hover{
 
         font-size: 10vw;
         margin-bottom: 0px; 
-    }
-    
-    .contact-form form p{
-        font-family: 'Cairo';
-        font-size: 5vw;
-        font-variant: small-caps;
-        margin: 0;
-        margin: 2px;
-    }
-    
-    .contact-all{
-        background-color: #dad5cf;
-        padding: 25px 20px 20px 20px;
-        margin-top: 40px;
-        box-shadow: 0 0 5px #ffffff 
-    }
-    .contact-form form{
-        display: block;
-    }
-    
-    .contact-form form p button,
-    .contact-form form p input,
-    .contact-form form p textarea{
-        width: 100%;
-        padding: 2px;
-        outline: 0;
-
-    }
-    #email{
-        width: 100%;
-    }
-    
-    .contact-all{
-        display: block;
-        padding: 0;
-        border-radius: 0;
-    }
-    .aside{
-        display: none;
-    }
-    .contact-data ul{
-        padding-top: 5%;
-        padding-left: 4%;
-    }
-    .contact-data ul li{
-        font-size: 25px;
     }
 }

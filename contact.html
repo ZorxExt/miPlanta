@@ -1,85 +1,220 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="icon" href="IMG/chalaG.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="stylesheet" href="CSS/style_contact.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="IMG/chalaG.ico" type="image/x-icon" />
 
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/style_contact.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
 
     <title>MiPlanta</title>
-</head>
+  </head>
 
-
-<body>
-
+  <body>
     <div class="container">
-        <header>
-            <nav>
-                <ul class="nav__ul">
-                    <li class="nav__li" id="MiPlanta"> <h1><a href="index.html">mi<b>Planta</b></a></h1></li>
-                    <li class="nav__li" id="Nosotros"><a href="about.html">Nosotros</a></li>
-                    <li class="nav__li" id="Blog"><a href="blog.html">Comunidad</a></li>
-                    <li class="nav__li" id="Contacto"><a href="">Contacto</a></li>
+      <header>
+        <nav>
+          <ul class="nav__ul">
+            <li class="nav__li" id="MiPlanta">
+              <h1>
+                <a href="index.html">mi<b>Planta</b></a>
+              </h1>
+            </li>
+            <li class="nav__li" id="Nosotros">
+              <a href="about.html">Nosotros</a>
+            </li>
+            <li class="nav__li" id="Blog"><a href="blog.html">Comunidad</a></li>
+            <li class="nav__li" id="FAQ"><a href="FAQ.html">FAQ</a></li>
+          </ul>
+        </nav>
+      </header>
 
-                </ul>
-            </nav>
-        </header>
-        
-        <div class="contact-all">
-            <div class="contact-form">
-                <form action="contact.php" method="post" class="needs-validation">
-            
-                    <p>
-                        <label for="nombre">Nombre y Apellido</label>
-                        <input type="text" id="nombre" name="name" required>
-                    </p>
-                    <p class="email">
-                        <label for="email">Email</label>
-                        <input type="text" id="email" name="email" required>
-                    </p>
-                    <p class="motivo">
-                        <label for="motivo">Motivo</label>
-                        <select name="motivo" id="motivo" required>
-                        <option value="medico">Medico</option>
-                        <option value="legal">Legal</option>
-                        <option value="otro">Otro</option>
-                        </select>
-                     </p>      
-                    <p>   
-                        <label for="descripcion">Descripcion</label>
-                        <textarea id="descripcion" cols="25" rows="7" name="text" required></textarea>
-                    </p>   
-  
-                    <p class="boton">
-                        <button type="submit" name="register">
-                            <img src="IMG/enviar.png" alt=""> Enviar
-                        </button>
-                    </p>
-                    <div class="contact-data">
-                    </div>
-                </form>
-            </div>
-            <div class="aside">
-            </div>
+      <div class="main_page">
+        <h2>REPROCANN – Solicitud de Registro</h2>
+
+        <div class="preform-1">
+          <div class="preform-1_text">
+            <p>
+              <img
+                src="./IMG/reprocannICO.png"
+                alt=""
+                style="width: 30px; vertical-align: middle; margin-right: 5px"
+              />La inscripción al programa <b>REPROCANN</b> es totalmente
+              GRATUITA.
+            </p>
+            <p>
+              <img
+                src="./IMG/clip.png"
+                alt=""
+                style="width: 30px; vertical-align: middle; margin-right: 5px"
+              />Nuestro equipo le facilita todo el trámite con un profesional
+              médico.
+            </p>
+            <p style="font-size: 20px">
+              Una vez hayamos recibido la Solicitud nos contactaremos para
+              concertar la entrevista médica. Luego, presentaremos su
+              documentación al REPROCANN y cuando lo tenga aprobado le
+              avisaremos por mail.
+            </p>
+            <p>
+              <img
+                src="./IMG/admin.png"
+                alt=""
+                style="width: 30px; vertical-align: middle; margin-right: 5px"
+              />Tiene un valor de <b>$15.000 </b> y el pago se realiza por
+              transferencia al ALIAS: miplanta.ok
+            </p>
+          </div>
+          <div class="preform-img"></div>
         </div>
 
-        <footer>
-            <p>
-                © 2023 Mi Planta Argentina. Todos los derechos reservados. <a href="aviso_legal.html">Aviso Legal.</a> <a href="politica_privacidad.html">Políticas de Privacidad.</a> 
-            </p>
-            <p style="padding-top: 8px;">Powered by Francisco Sabaté</p>
-        </footer>
+        <div style="font-size: 30px">
+          <h3 style="font-size: 25px">
+            Al finalizar verás los siguientes archivos a subir:
+          </h3>
+          <div>
+            <div>
+              <img
+                src="./IMG/flecha.png"
+                alt=""
+                style="width: 20px; vertical-align: middle; margin-right: 2px"
+              />La firma con aclaración
+              <span style="font-size: 20px">(JPG o PNG)</span>
+            </div>
+            <div>
+              <img
+                src="./IMG/flecha.png"
+                alt=""
+                style="width: 20px; vertical-align: middle; margin-right: 2px"
+              />El consentimiento informado
+              <span style="font-size: 20px"
+                >y DDJJ previas (Sólo para Renovación)</span
+              >
+            </div>
+
+            <div>
+              <img
+                src="./IMG/flecha.png"
+                alt=""
+                style="width: 20px; vertical-align: middle; margin-right: 2px"
+              />El comprobante de transferencia
+              <span style="font-size: 20px">(JPG, PNG o PDF)</span>
+            </div>
+          </div>
+        </div>
+        <div class="notice">
+          <h3>
+            ¡Todos los archivos que subas son estrictamente secretos y una vez
+            finalizado el trámite de inscripción serán destruidos. <br />
+            No negociamos con tu información personal ni tratamos con terceros
+            ningún dato!
+          </h3>
+          <p style="text-align: center">
+            Ante cualquier duda o consulta estamos a su disposición por nuestros
+            canales de contacto en el sitio MiPlanta o por mail a
+            consultas@miplanta.com.
+          </p>
+        </div>
+        <p>¡Te esperamos! <br> <br>
+
+            -Dr Joaquín Araujo (UBA) MN 180168. <br>
+           
+            -Dr Joaquín Sabaté (UNC) CPACF T 144 F 638.</p>
+        
+        
+        <div style="border-top: #049144 solid 2px; padding-top: 100px;">
+            <form
+          action="contact.php"
+          method="post"
+          class="needs-validation"
+          enctype="multipart/form-data"
+        >
+            <div class="form-personal-data">
+                Datos Personales
+                <label for="name">Nombre y Apellido</label>
+                <input type="text" name="name" id="name">
+
+                <label for="dni">DNI</label>
+                <input type="number" name="dni" id="dni">
+
+                <label for="nacimiento">Fecha de Nacimiento</label>
+                <input type="date" name="nacimiento" id="nacimiento">
+
+                <label for="edad">Edad</label>
+                <input type="number" name="edad" id="edad">
+
+                <label for="provincia">Provincia</label>
+                <input type="text" name="provincia" id="provincia">
+
+                <label for="localidad">Localidad</label>
+                <input type="text" name="localidad" id="localidad">
+
+                <label for="domicilio">Domicilio</label>
+                <input type="text" name="domicilio" id="domicilio">
+
+
+                <label for="vinculacion">Código de Vinculación</label>
+                <input type="text" name="vinculacion" id="vinculacion">
+
+                
+            </div>
+            <label for="email">Correo Electronico</label>
+            <input type="email" name="email" id="email">
+
+            <label for="celular">Numero de Celular</label>
+            <input type="tel" name="celular" id="celular">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <label for="pdfFile">Selecciona un archivo PDF:</label>
+          <input type="file" name="pdfFile" accept=".pdf" required />
+
+          <p class="boton">
+            <button type="submit" name="register">
+              <img src="IMG/enviar.png" alt="" /> Enviar
+            </button>
+          </p>
+        </div>
+        
+
+
+
+
+      </div>
+
+      <footer>
+        <p>
+          © 2023 Mi Planta Argentina. Todos los derechos reservados.
+          <a href="aviso_legal.html">Aviso Legal.</a>
+          <a href="politica_privacidad.html">Políticas de Privacidad.</a>
+        </p>
+        <p style="padding-top: 8px">Powered by Francisco Sabaté</p>
+      </footer>
     </div>
-
-
-</body>
+  </body>
 </html>
