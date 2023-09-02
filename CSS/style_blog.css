@@ -196,7 +196,7 @@ footer > p > a:hover{
     .nav__li{
         margin: 5px;
         padding: 5px;
-        font-size: 4vw;
+        font-size: 5vw;
         margin-right: 0;
     }
     .nav__li:first-child{
