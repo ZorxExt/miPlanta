@@ -104,7 +104,7 @@
                 alt=""
                 style="width: 20px; vertical-align: middle; margin-right: 2px"
               />El comprobante de transferencia
-              <span >(JPG, PNG o PDF)</span>
+              <span>(JPG, PNG o PDF)</span>
             </div>
           </div>
         </div>
@@ -138,7 +138,7 @@
           enctype="multipart/form-data"
         >
           <div class="form-data" id="form-personal-data">
-            <h3 >Datos Personales</h3>
+            <h3>Datos Personales</h3>
 
             <div>
               <label for="name">Nombre y Apellido</label>
@@ -237,7 +237,7 @@
           </div>
 
           <div class="form-data" id="form-personal-data-2">
-            <h3 >Datos Clínicos</h3>
+            <h3>Datos Clínicos</h3>
 
             <div>
               <label for="patologia"
@@ -378,7 +378,7 @@
           </div>
 
           <div class="form-data" id="form-tutor-data">
-            <h3 >
+            <h3>
               ATENCIÓN: A continuación <b>SÓLO</b> Paciente menor de edad o
               persona no autónoma
             </h3>
@@ -445,10 +445,11 @@
           </div>
 
           <div class="form-data" id="form-tutor-data">
-            <h3 >Carga de Archivos y pago</h3>
+            <h3>Carga de Archivos y pago</h3>
             <div>
               <label for="firma">Firma y aclaración (JPG o PNG)</label>
               <input
+                class="file-input"
                 type="file"
                 name="firma"
                 id="firma"
@@ -463,6 +464,7 @@
                 Consentimiento informado y DDJJ previas.</label
               >
               <input
+                class="file-input"
                 type="file"
                 name="file-renova"
                 id="file-renova"
@@ -470,14 +472,20 @@
               />
             </div>
 
-            <div >
+            <div>
               <label for="recibo">
                 Comprobante de la transferencia de <b>$15.000</b> al siguiente
                 alias: <br />
 
                 <span style="font-weight: bold">MIPLANTA.OK</span>
               </label>
-              <input type="file" name="recibo" id="recibo" accept=".jpg,.png" />
+              <input
+                class="file-input"
+                type="file"
+                name="recibo"
+                id="recibo"
+                accept=".jpg,.png"
+              />
             </div>
           </div>
 
