@@ -159,12 +159,18 @@ select {
 }
 
 .ventana {
-  background-color: #049144;
+  background-color: white;
   width: 800px;
   padding: 10px 20px;
   margin: 30% auto;
   position: relative;
   border-radius: 8px;
+}
+.ventana > h3{
+  background-color: #4c966f2d;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 .form-data > .modal {
   background-color: rgba(0, 0, 0, 0.5);
@@ -206,17 +212,17 @@ select {
   transform: scale(1.1);
   background-color: #0da350;
 }
-.file-input:active::before{
-    background-color: white;
+.file-input:active::before {
+  background-color: white;
 }
 
-form .boton {
+.boton {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-form button {
-  width: 90vw;
+button {
+  width: 50%;
   padding: 20px 0;
 
   font-size: 30px;
@@ -238,16 +244,30 @@ form button {
   transition: all 0.4s ease 0s;
 }
 
-form button img {
+button img {
   width: 1em;
   height: 1em;
   margin-right: 0.2em;
 }
 
-form button:hover {
+button:hover {
   background-color: white;
   color: black;
   transform: scale(1.02);
+}
+
+.finalizado {
+  font-family: Cairo;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: -250px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s;
 }
 
 footer {
@@ -343,5 +363,11 @@ footer > p > a:hover {
   }
   .form-data > h3 {
     grid-column: 1;
+  }
+  .finalizado{
+    top: 0px;
+  }
+  .ventana {
+    width: 95vw;
   }
 }

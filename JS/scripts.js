@@ -10,3 +10,7 @@ function info() {
     document.getElementById("aboutCODE-container").style.display = "block"
 }
 
+function closeFinalizado(){
+    document.getElementById("finalizado").style.opacity="0"
+    document.getElementById("finalizado").style.pointerEvents = "none"
+}

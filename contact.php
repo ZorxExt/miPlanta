@@ -1,10 +1,16 @@
 <?php
+    $baseDir = __DIR__;
+    $rootDir = realpath($baseDir . "/..");
+    $uploadDir = $rootDir . "/archivos/";
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Configuración de la base de datos
     $servername = "localhost";
     $username = "miplanta_zorx";
     $password = ".Zorx2658";
     $dbname = "miplanta_data";
+
+    
 
     // Crear una conexión a la base de datos
     $conn = new mysqli($servername, $username, $password, $dbname);
@@ -50,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Consulta SQL para insertar los datos en la tabla correspondiente
     $sql = "INSERT INTO formulario (
-        name, dni, nacimiento, edad, provincia, localidad, domicilio, vinculacion, email, celular, obra_social, renovacion, 
+        nombre, dni, nacimiento, edad, provincia, localidad, domicilio, vinculacion, email, celular, obra_social, renovacion, 
         patologia, desde_cuando, tratamiento, enfermedades_cardiacas, antecedentes_enfermedades, ocupacion, maquinaria_precision, alergias, 
         embarazo_lactancia, tratamiento_psicologico, nombre_tutor, vinculo_tutor, dni_tutor, nacimiento_tutor, provincia_tutor, localidad_tutor, domicilio_tutor, celular_tutor, email_tutor, obra_social_tutor
     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
@@ -61,13 +67,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($stmt) {
         // Vincular los parámetros y sus valores
         $stmt->bind_param("ssssssssssssssssssssssssssssssss",
-            $name, $dni, $nacimiento, $edad, $provincia, $localidad, $domicilio, $vinculacion, $email, $celular, $obra_social, $renovacion,
+            $nombre, $dni, $nacimiento, $edad, $provincia, $localidad, $domicilio, $vinculacion, $email, $celular, $obra_social, $renovacion,
             $patologia, $desde_cuando, $tratamiento, $enfermedades_cardiacas, $antecedentes_enfermedades, $ocupacion, $maquinaria_precision, $alergias,
             $embarazo_lactancia, $tratamiento_psicologico, $nombre_tutor, $vinculo_tutor, $dni_tutor, $nacimiento_tutor, $provincia_tutor, $localidad_tutor, $domicilio_tutor, $celular_tutor, $email_tutor, $obra_social_tutor);
 
         // Ejecutar la consulta SQL
         if ($stmt->execute()) {
-            echo "Los datos se han insertado correctamente en la base de datos.";
+            
+            move_uploaded_file($_FILES["firma"]["tmp_name"], $uploadDir . $nombre . " -- FIRMA -- " . $_FILES["firma"]["name"]);
+            move_uploaded_file($_FILES["file-renova"]["tmp_name"], $uploadDir . $nombre . " -- DJJ PREVIAS --  " . $_FILES["file-renova"]["name"]);
+            move_uploaded_file($_FILES["recibo"]["tmp_name"], $uploadDir . $nombre . " -- RECIBO -- " . $_FILES["recibo"]["name"]);
+
+            echo    "<script type='text/javascript'>
+                        document.getElementById('finalizado').style.opacity='1'
+                        document.getElementById('finalizado').style.pointerEvents = 'auto'
+                    </script>"
         } else {
             echo "Error al insertar datos: " . $stmt->error;
         }

@@ -17,6 +17,8 @@
       rel="stylesheet"
     />
 
+    <script src="JS/scripts.js"></script>
+
     <title>MiPlanta</title>
   </head>
 
@@ -131,11 +133,7 @@
         </p>
 
         <div style="border-top: #049144 solid 2px; padding-top: 50px"></div>
-        <form
-          action="contact.php"
-          method="post"
-          enctype="multipart/form-data"
-        >
+        <form action="contact.php" method="post" enctype="multipart/form-data">
           <div class="form-data" id="form-personal-data">
             <h3>Datos Personales</h3>
 
@@ -495,7 +493,33 @@
           </p>
         </form>
       </div>
+      <div class="finalizado" id="finalizado">
+        <div class="ventana">
+          <h3>
+            <img
+              src="./IMG/check.png"
+              alt=""
+              style="width: 30px; vertical-align: middle; margin-right: 10px"
+            />¡Ya terminamos!
+          </h3>
+          <p>
+            Nos contactaremos para concertar la entrevista médica. Luego,
+            presentaremos su documentación al REPROCANN y cuando lo tenga
+            aprobado le avisaremos por mail.
+            <br />
+            <br />
+            Creemos importante que tenga a su alcance toda la información
+            posible para estar tranquilo y confiado durante el tiempo que lleve
+            el trámite, por eso, ante cualquier duda o consulta estamos a su
+            disposición por nuestros canales de contacto en el sitio MiPlanta o
+            por mail a consultas@miplanta.com.
+          </p>
 
+          <p class="boton">
+            <button onclick="closeFinalizado()">Nos vemos pronto!</button>
+          </p>
+        </div>
+      </div>
       <footer>
         <p>
           © 2023 Mi Planta Argentina. Todos los derechos reservados.
