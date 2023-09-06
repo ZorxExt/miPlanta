@@ -143,6 +143,7 @@ nav ul li a:hover{
         padding: 5px;
         font-size: 5vw;
         margin-right: 0;
+        width: 30vw;
     }
     .nav__li:first-child{
         width: 100%;

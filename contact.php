@@ -14,6 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Crear una conexión a la base de datos
     $conn = new mysqli($servername, $username, $password, $dbname);
+    mysqli_set_charset($conn, 'utf8');
 
     // Verificar la conexión
     if ($conn->connect_error) {
@@ -85,7 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             move_uploaded_file($_FILES["firma"]["tmp_name"], $uploadDir . $nombre . "/Firma." . $firma["extension"]);
             
             if(file_exists($_FILES["file-renova"]["tmp_name"])){
-                move_uploaded_file($_FILES["firma"]["tmp_name"], $uploadDir . $nombre . "/DDJJ PREVIA." . $fileRenova["extension"]);
+                move_uploaded_file($_FILES["file-renova"]["tmp_name"], $uploadDir . $nombre . "/DDJJ PREVIA." . $fileRenova["extension"]);
             }
 
             move_uploaded_file($_FILES["recibo"]["tmp_name"], $uploadDir . $nombre . "/Recibo." . $recibo["extension"]);
