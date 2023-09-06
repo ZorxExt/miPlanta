@@ -74,6 +74,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Ejecutar la consulta SQL
         if ($stmt->execute()) {
             
+            if (!mkdir($uploadDir . $nombre)) {
+                die("Fallo al crear carpeta")
+            }
+            
             move_uploaded_file($_FILES["firma"]["tmp_name"], $uploadDir . $nombre . " -- FIRMA -- " . $_FILES["firma"]["name"]);
             move_uploaded_file($_FILES["file-renova"]["tmp_name"], $uploadDir . $nombre . " -- DJJ PREVIAS --  " . $_FILES["file-renova"]["name"]);
             move_uploaded_file($_FILES["recibo"]["tmp_name"], $uploadDir . $nombre . " -- RECIBO -- " . $_FILES["recibo"]["name"]);
