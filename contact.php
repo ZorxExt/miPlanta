@@ -74,20 +74,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Ejecutar la consulta SQL
         if ($stmt->execute()) {
             
-            if (!mkdir($uploadDir . $nombre)) {
-                die("Fallo al crear carpeta")
+            if(!file_exists($uploadDir . $nombre)){
+                mkdir($uploadDir . $nombre);
             }
-            
-            move_uploaded_file($_FILES["firma"]["tmp_name"], $uploadDir . $nombre . " -- FIRMA -- " . $_FILES["firma"]["name"]);
-            move_uploaded_file($_FILES["file-renova"]["tmp_name"], $uploadDir . $nombre . " -- DJJ PREVIAS --  " . $_FILES["file-renova"]["name"]);
-            move_uploaded_file($_FILES["recibo"]["tmp_name"], $uploadDir . $nombre . " -- RECIBO -- " . $_FILES["recibo"]["name"]);
 
-            echo    "<script type='text/javascript'>
-                        document.getElementById('finalizado').style.opacity='1'
-                        document.getElementById('finalizado').style.pointerEvents = 'auto'
-                    </script>"
+            $firma = pathinfo($_FILES["firma"]["name"]);
+            $fileRenova = pathinfo($_FILES["file-renova"]["name"]);
+            $recibo = pathinfo($_FILES["recibo"]["name"]);
+
+            move_uploaded_file($_FILES["firma"]["tmp_name"], $uploadDir . $nombre . "/Firma." . $firma["extension"]);
+            
+            if(file_exists($_FILES["file-renova"]["tmp_name"])){
+                move_uploaded_file($_FILES["firma"]["tmp_name"], $uploadDir . $nombre . "/DDJJ PREVIA." . $fileRenova["extension"]);
+            }
+
+            move_uploaded_file($_FILES["recibo"]["tmp_name"], $uploadDir . $nombre . "/Recibo." . $recibo["extension"]);
+
+            header("Location:contact-successful.html");
+
+
         } else {
-            echo "Error al insertar datos: " . $stmt->error;
+            echo "Error al insertar datos:" . $stmt->error;
         }
 
         // Cerrar la declaración preparada
