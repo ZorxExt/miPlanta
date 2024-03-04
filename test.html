@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Image Upload Apps Script</title>
+  </head>
+  <body>
+    <form
+      method="POST"
+      action="https://script.google.com/macros/s/AKfycbzBrDUBWL55eFnFVfTuolqfcgy3ybPK9NvfSn6INHLEEDMsTbiESDdz82_zvhFVFtM6-A/exec"
+    >
+      <div style="width: 50%; margin: auto">
+        <h1>Image Upload Apps Script</h1>
+        <h3>Localhost to Google Drive</h3>
+        <img
+          id="ImgPreview"
+          style="
+            width: 100%;
+            border: 1px solid black;
+            height: 350px;
+            margin-bottom: 20px;
+          "
+        />
+        <input type="file" name="image" id="image" onchange="FileOnChange(this)" />
+        <input type="submit" value="Upload" />
+        <input type="hidden" name="ImgData" id="ImgData" />
+      </div>
+    </form>
+  </body>
+</html>
+
+<script>
+  function FileOnChange(p) {
+    var file = p.files[0]; //01
+    ImgSrc = URL.createObjectURL(file); //02
+    document.getElementById("ImgPreview").src = ImgSrc; //03
+
+    let imgRead = new FileReader(); //04
+
+    imgRead.onload = function (e) {
+      //05
+      var AllData = e.target.result; //06
+      var ImgData = AllData.split("base64,")[1]; //07
+      document.getElementById("ImgData").value = ImgData; //08
+    };
+    console.log(document.getElementById("ImgData"));
+    console.log(document.getElementById("image"));
+    imgRead.readAsDataURL(file); //09
+  }
+</script>

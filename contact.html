@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta
+      name="google-signin-client_id"
+      content="808862939071-bdmfaknqehj3nue40r4gd9jltl262k8u.apps.googleusercontent.com"
+    />
     <link rel="icon" href="IMG/chalaG.ico" type="image/x-icon" />
 
     <link rel="stylesheet" href="CSS/normalize.css" />
@@ -16,12 +19,9 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;800&display=swap"
       rel="stylesheet"
     />
-
-    <script src="JS/scripts.js"></script>
-
     <title>MiPlanta</title>
   </head>
-
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
   <body>
     <div class="container">
       <header>
@@ -133,7 +133,12 @@
         </p>
 
         <div style="border-top: #049144 solid 2px; padding-top: 50px"></div>
-        <form action="contact.php" method="post" enctype="multipart/form-data">
+        <form
+          method="POST"
+          name="contact-form"
+          id="contact-form"
+          action="https://script.google.com/macros/s/AKfycbwejI5IwdFnU7WwRLZVIG4a3F78vKlCGwxt2-FJg5BaccTOmRCUuwt5Sx-xxw4aGiiT/exec"
+        >
           <div class="form-data" id="form-personal-data">
             <h3>Datos Personales</h3>
 
@@ -450,23 +455,29 @@
                 type="file"
                 name="firma"
                 id="firma"
-                accept=".jpg,.png"
+                accept="image/jpeg, image/png"
                 required
+                onchange="FileOnChange(this,document.getElementById('firma_imgPreview'),document.getElementsByName('firma_imgData')[0])"
               />
+              <img src="" id="firma_imgPreview" />
+              <input type="hidden" name="firma_imgData" />
             </div>
 
             <div>
-              <label for="file-renova"
+              <label for="file_renova"
                 ><b>Solo Renovación</b> <br />
                 Consentimiento informado y DDJJ previas.</label
               >
               <input
                 class="file-input"
                 type="file"
-                name="file-renova"
-                id="file-renova"
+                name="file_renova"
+                id="file_renova"
                 accept=".jpg,.png"
+                onchange="FileOnChange(this,document.getElementById('file_renova_imgPreview'),document.getElementsByName('file_renova_imgData')[0])"
               />
+              <img src="" id="file_renova_imgPreview" />
+              <input type="hidden" name="file_renova_imgData" />
             </div>
 
             <div>
@@ -483,15 +494,26 @@
                 id="recibo"
                 accept=".jpg,.png"
                 required
+                onchange="FileOnChange(this,document.getElementById('recibo_imgPreview'),document.getElementsByName('recibo_imgData')[0])"
               />
+              <img src="" id="recibo_imgPreview" />
+              <input type="hidden" name="recibo_imgData" />
             </div>
           </div>
 
-          <p class="boton">
-            <button type="submit" name="register">
-              <img src="IMG/enviar.png" alt="" /> Enviar
+          <div class="boton">
+            <button type="submit" name="register" id="register">
+              <div class="container-carga" id="container-carga">
+                <div class="cargando">
+                  <div class="pelotas"></div>
+                  <div class="pelotas"></div>
+                  <div class="pelotas"></div>
+                </div>
+              </div>
+              <img src="IMG/enviar.png" alt="" />
+              <span id="register-text" >Enviar</span>
             </button>
-          </p>
+          </div>
         </form>
       </div>
       <div class="finalizado" id="finalizado">
@@ -516,11 +538,12 @@
             por mail a consultas@miplanta.com.
           </p>
 
-          <p class="boton">
+          <div class="boton">
             <button onclick="closeFinalizado()">Nos vemos pronto!</button>
-          </p>
+          </div>
         </div>
       </div>
+
       <footer>
         <p>
           © 2023 Mi Planta Argentina. Todos los derechos reservados.
@@ -530,5 +553,6 @@
         <p style="padding-top: 8px">Powered by Francisco Sabaté</p>
       </footer>
     </div>
+    <script src="JS/scripts.js"></script>
   </body>
 </html>
