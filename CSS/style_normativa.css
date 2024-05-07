@@ -1,232 +1,220 @@
-body{
-    overflow-x: hidden;
-    background-color: #054b24;
-    background-image: url(../IMG/cannabis2.jpg);
+body {
+  overflow-x: hidden;
+  background-color: #022201;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+}
+a {
+  color: #049144;
+}
+
+b {
+  color: #049144;
+}
+
+header {
+  margin: auto;
+  background-color: #dfece6;
+  box-shadow: 0px 0px 60px black;
+}
+
+nav {
+  max-width: 1500px;
+  margin: auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li a {
+  text-decoration: none;
+  font-family: "Cairo";
+  font-weight: 400;
+  color: black;
+  transition: all 0.4s ease 0s;
+}
+nav ul li a:hover {
+  color: #049144;
+}
+
+.nav__ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  margin-right: 40px;
+}
+
+.nav__li {
+  font-size: 20px;
+  margin: 0 100px 0 0px;
+  text-align: center;
+}
+.nav__li:first-child {
+  margin-right: auto;
+}
+.nav__li:first-child > h1 {
+  margin: 15px 0;
+  font-size: 50px;
+}
+
+.nav__li:first-child > h1 > a {
+  color: black;
+  font-weight: 600;
+}
+
+.main_page {
+  max-width: 1500px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+  background-color: #dfece6;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 50px 0;
+}
+
+.main_head {
+  max-width: 1500px;
+  height: 200px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  background-color: #0da350bd;
+  background-image: url(../IMG/cannabis2.jpg);
+  background-blend-mode: multiply;
+  background-position: center;
+}
+article {
+  font-family: "Cairo";
+  padding: 0px 30px;
+  padding-top: 0;
+  text-align: justify;
+}
+article > h3 {
+  font-size: 2rem;
+  color: #054b24;
+}
+article > p {
+  font-size: 1.1rem;
+}
+
+footer {
+  background-color: #0491443d;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+footer > p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Cairo";
+  font-size: 1.2rem;
+  color: #c9c9c9;
+}
+footer > p > a {
+  color: #4c966f;
+  text-decoration: none;
+}
+footer > p > a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  body {
     background-attachment: fixed;
-    background-blend-mode: multiply;
-}
+  }
 
-b{
-    color: #049144;
-}
-
-header{
-    margin: auto;
-    background-color: #dfece6;
-    box-shadow: 0px 0px 60px black;
-}
-
-nav{
-    max-width: 1300px;
-    margin: auto;
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    user-select:none;
-}
-
-ul{
-    list-style: none;
+  header {
+    border-radius: 0;
+  }
+  nav {
     margin: 0;
+  }
+
+  .nav__ul {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     padding: 0;
-}
-nav ul li a{
-    text-decoration: none;
-    font-family: 'Cairo';
-    font-weight: 400;
-    color: black;
-    transition: all 0.4s ease 0s;
-}
-nav ul li a:hover{
-    color:#049144;
-}
-
-
-.nav__ul{
-    display: flex;
-    justify-content: flex-end;
-    align-items: baseline;
-}
-
-
-.nav__li{
-    font-size: 20px;
-    margin: 0 30px 0 30px;
-    text-align: center;
-
-}
-.nav__li:first-child{
-    margin-right: auto;
-}
-.nav__li:first-child > h1{
-    margin: 15px 0;
-    font-size: 35px;
-}
-
-
-.nav__li:first-child > h1 > a{
-    color:black;
-    font-weight: 600;
-    
-}
-
-.main_page{
-    max-width: 1500px;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
-    background-color:#dfece6;
-    display: flex;
-    flex-direction: column;
-    padding: 0 0 50px 0;
-}
-
-.main_head{
-    max-width: 1500px;
-    height: 200px;
-    border-top-right-radius: 4px;
-    border-top-left-radius: 4px;
-    background-color:#0da350bd;
-    background-image: url(../IMG/cannabis2.jpg);
-    background-blend-mode: multiply;
-    background-position: center;
-}
-article{
-    font-family: 'Cairo';
-    padding: 0px 30px;
-    padding-top: 0;
-    text-align: justify;
-}
-article > h3{
-    font-size: 2rem;
-    color:#054b24;
-}
-article > p{
-    font-size: 1.1rem;
-}
-
-
-footer{
-    background-color: #0491443d;
-    margin-top: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-footer > p{
     margin: 0;
-    padding: 0;
+  }
+  .nav__li {
+    margin: 5px;
+    padding: 5px;
+    font-size: 5vw;
+    margin-right: 0;
+    width: 30vw;
+  }
+  .nav__li:first-child {
+    width: 100%;
     text-align: center;
-    font-family: 'Cairo';
-    font-size: 1.2rem;
-    color: #c9c9c9;
-}
-footer > p > a{
-    color: #4c966f;
-    text-decoration: none;
-}
-footer > p > a:hover{
-    text-decoration: underline;
-}
+  }
 
+  .nav__li:first-child > h1 {
+    font-size: 10vw;
+    margin-bottom: 0px;
+  }
 
-@media (max-width: 900px){
-    
-    body{
-        background-color: #0da350;
-        background-attachment: fixed;
-    }
-    
-    header{
-        border-radius: 0;
-    }
-    nav{
-        margin: 0;
-    }
+  .main_page {
+    border-radius: 0;
+    padding: 20px 0 20px 0;
+    margin: 40px 0 40px 0;
+    box-shadow: 0 0 5px #ffffff;
+  }
+  .start-image {
+    display: none;
+  }
 
-    .nav__ul{
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        padding: 0;
+  .next {
+    display: none;
+  }
+  .servicio {
+    border-radius: 0;
+    margin-top: 10px;
+  }
 
-    }
-    .nav__li{
-        margin: 5px;
-        padding: 5px;
-        font-size: 5vw;
-        margin-right: 0;
-        width: 30vw;
-    }
-    .nav__li:first-child{
-        width: 100%;
-        text-align: center;
-    }
+  .servicio-grid_container {
+    display: block;
+    font-size: 5vw;
+    padding-bottom: 0;
+  }
+  .servicio-grid_container > .servicio-grid_child > div {
+    align-self: flex-start;
+  }
+  .servicio-grid_container > .servicio-grid_child > p {
+    margin: 0;
+    margin-bottom: 50px;
+  }
 
-    .nav__li:first-child > h1{
+  .chala > .img_container {
+    margin-right: 0px !important;
+  }
 
-        font-size: 10vw;
-        margin-bottom: 0px;
+  .casa > div {
+    margin-left: 0 !important;
+  }
 
-        
-    }
+  .hoja > div {
+    margin-right: 0px !important;
+  }
 
-    .main_page{
-        border-radius: 0;
-        padding: 20px 0 20px 0;
-        margin: 40px 0 40px 0;
-        box-shadow: 0 0 5px #ffffff ;
-    }
-    .start-image{
-        display: none;
-    }
-
-    .next{
-        display: none;
-    }
-    .servicio{
-        border-radius: 0;
-        margin-top: 10px;
-    }
-
-    .servicio-grid_container{
-        display: block;
-        font-size: 5vw;
-        padding-bottom: 0;
-    }
-    .servicio-grid_container > .servicio-grid_child > div{
-        align-self: flex-start;
-    }
-    .servicio-grid_container > .servicio-grid_child > p{
-        margin: 0;
-        margin-bottom: 50px;
-    }
-
-    .chala > .img_container{
-        margin-right: 0px !important;
-    }
-    
-    .casa > div{
-        margin-left: 0 !important;
-    }
-    
-    .hoja > div{
-        margin-right: 0px !important;
-    }
-    
-    .check > div{
-        margin-left: 0 !important;
-    }
+  .check > div {
+    margin-left: 0 !important;
+  }
 }
 
-@media (max-width:750px){
-    
-    .main_head{
-        display: none;
-    }
-    article > h3{
-        font-size: 1.4rem;
-        color:#054b24;
-    }
-
-
+@media (max-width: 750px) {
+  .main_head {
+    display: none;
+  }
+  article > h3 {
+    font-size: 1.4rem;
+    color: #054b24;
+  }
 }

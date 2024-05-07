@@ -1,262 +1,246 @@
-body{
-    overflow-x: hidden;
-    background-color: #054b24;
-    background-image: url(../IMG/cannabis2.jpg);
-    background-attachment: fixed;
-    background-blend-mode: multiply;
+body {
+  overflow-x: hidden;
+  background-color: #022201;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+}
+a {
+  color: #049144;
 }
 
-b{
-    color: #049144;
-}
-a{
-    text-decoration: none;
-    color: black;
+b {
+  color: #049144;
 }
 
-header{
-    margin: auto;
-    background-color: #dfece6;
-    box-shadow: 0px 0px 60px black;
+header {
+  margin: auto;
+  background-color: #dfece6;
+  box-shadow: 0px 0px 60px black;
 }
 
-nav{
-    max-width: 1300px;
-    margin: auto;
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    user-select:none;
+nav {
+  max-width: 1500px;
+  margin: auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
-ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-nav ul li a{
-    text-decoration: none;
-    font-family: 'Cairo';
-    font-weight: 400;
-    color: black;
-    transition: all 0.4s ease 0s;
+nav ul li a {
+  text-decoration: none;
+  font-family: "Cairo";
+  font-weight: 400;
+  color: black;
+  transition: all 0.4s ease 0s;
 }
-nav ul li a:hover{
-    color:#049144;
-}
-
-
-.nav__ul{
-    display: flex;
-    justify-content: flex-end;
-    align-items: baseline;
+nav ul li a:hover {
+  color: #049144;
 }
 
-
-.nav__li{
-    font-size: 20px;
-    margin: 0 30px 0 30px;
-    text-align: center;
-
-}
-.nav__li:first-child{
-    margin-right: auto;
-}
-.nav__li:first-child > h1{
-    margin: 15px 0;
-    font-size: 35px;
+.nav__ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  margin-right: 40px;
 }
 
-
-.nav__li:first-child > h1 > a{
-    color:black;
-    font-weight: 600;
-    
+.nav__li {
+  font-size: 20px;
+  margin: 0 100px 0 0px;
+  text-align: center;
+}
+.nav__li:first-child {
+  margin-right: auto;
+}
+.nav__li:first-child > h1 {
+  margin: 15px 0;
+  font-size: 50px;
 }
 
-.main_page{
-    max-width: 1500px;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 150px;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
-    background-color:#dfece6;
-    display: flex;
-    flex-direction: column;
-    padding: 100px 0 100px 0;
-    font-family: Cairo;
+.nav__li:first-child > h1 > a {
+  color: black;
+  font-weight: 600;
 }
 
-.start_container{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
+.main_page {
+  max-width: 1500px;
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 150px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+  background-color: #dfece6;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0 100px 0;
+  font-family: Cairo;
 }
 
-.start-text-container{
-    max-width: 650px;
-    justify-self: flex-start;
-}
-.start-text-container > h2{
-    font-family: Cairo;
-    font-variant: small-caps;
-    margin: 0;
-    padding: 0;
-    font-size: 4rem;
-}
-.start-text-container > h2 > small{
-    font-size: 3rem;
+.start_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.start-image{
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-radius: 30px;
-    box-shadow: 1px 0 5px rgba(0, 0, 0, 1);
-    width: 330px;
-    height: 330px;
+.start-text-container {
+  max-width: 650px;
+  justify-self: flex-start;
 }
-.articles-container{
-    border-top:#049144 solid 2px;
-    margin: 20px 50px 0 50px;
-    padding-top: 50px;
-    display: flex;
-    justify-content: center;
+.start-text-container > h2 {
+  font-family: Cairo;
+  font-variant: small-caps;
+  margin: 0;
+  padding: 0;
+  font-size: 4rem;
 }
-.article{
-    max-width: 300px;
-    background-color: #4c966f2d;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    transition: all 0.4s ease 0s;
+.start-text-container > h2 > small {
+  font-size: 3rem;
 }
-.article:hover{
-    transform: scale(1.2);
+
+.start-image {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-radius: 30px;
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 1);
+  width: 330px;
+  height: 330px;
+}
+.articles-container {
+  border-top: #049144 solid 2px;
+  margin: 20px 50px 0 50px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.article {
+  max-width: 300px;
+  background-color: #4c966f2d;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease 0s;
+}
+.article:hover {
+  transform: scale(1.2);
 }
 .article > p {
-    padding: 0px 10px 10px 10px;
-    margin: 10px 0;
+  padding: 0px 10px 10px 10px;
+  margin: 10px 0;
 }
-.article-img{
-    height: 150px;
-    background-image: url(../IMG/cultivo-plantas-cannabis.jpg);
-    background-size: cover;
-    background-position-y: 30%;
-    border-radius: 8px
+.article-img {
+  height: 150px;
+  background-image: url(../IMG/cultivo-plantas-cannabis.jpg);
+  background-size: cover;
+  background-position-y: 30%;
+  border-radius: 8px;
 }
-.article-title{
-    text-align: center;
+.article-title {
+  text-align: center;
 }
 
-
-footer{
-    background-color: #0491443d;
-    margin-top: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+footer {
+  background-color: #0491443d;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
-footer > p{
+footer > p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Cairo";
+  font-size: 1.2rem;
+  color: #c9c9c9;
+}
+footer > p > a {
+  color: #4c966f;
+  text-decoration: none;
+}
+footer > p > a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  body {
+    background-attachment: fixed;
+  }
+
+  header {
+    border-radius: 0;
+  }
+  nav {
     margin: 0;
+  }
+
+  .nav__ul {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     padding: 0;
+    margin: 0;
+  }
+  .nav__li {
+    margin: 5px;
+    padding: 5px;
+    font-size: 5vw;
+    margin-right: 0;
+    width: 30vw;
+  }
+  .nav__li:first-child {
+    width: 100%;
     text-align: center;
-    font-family: 'Cairo';
-    font-size: 1.2rem;
-    color: #c9c9c9;
-}
-footer > p > a{
-    color: #4c966f;
-    text-decoration: none;
-}
-footer > p > a:hover{
-    text-decoration: underline;
-}
+  }
 
+  .nav__li:first-child > h1 {
+    font-size: 10vw;
+    margin-bottom: 0px;
+  }
 
-@media (max-width: 900px){
-    
-    body{
-        background-color: #0da350;
-        background-attachment: fixed;
-    }
-    
-    header{
-        border-radius: 0;
-    }
-    nav{
-        margin: 0;
-    }
+  .main_page {
+    border-radius: 0;
+    padding: 20px 0 20px 0;
+    margin: 40px 0 40px 0;
+    box-shadow: 0 0 5px #ffffff;
+  }
+  .start_container {
+    display: block;
+    margin: auto;
+    padding: 0;
+  }
+  .start-image {
+    width: 30vw;
+    height: 30vw;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .start-text-container {
+    text-align: center;
+  }
 
-    .nav__ul{
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        padding: 0;
-
-    }
-    .nav__li{
-        margin: 5px;
-        padding: 5px;
-        font-size: 5vw;
-        margin-right: 0;
-        width: 30vw;
-    }
-    .nav__li:first-child{
-        width: 100%;
-        text-align: center;
-    }
-
-    .nav__li:first-child > h1{
-
-        font-size: 10vw;
-        margin-bottom: 0px;
-
-        
-    }
-
-    .main_page{
-        border-radius: 0;
-        padding: 20px 0 20px 0;
-        margin: 40px 0 40px 0;
-        box-shadow: 0 0 5px #ffffff ;
-    }
-    .start_container{
-        display: block;
-        margin: auto;
-        padding: 0;
-    }
-    .start-image{
-        width: 30vw;
-        height: 30vw;
-        display: block;
-        margin: auto;
-        margin-top: 40px;
-    }
-    .start-text-container{
-        text-align: center;
-    }
-
-    .start-text-container > h2{
-        font-size: 8vw;
-        text-align: center;
-    }
-    .start-text-container > h2 > small{
-        font-size: 6vw;
-    }
-    .prox{
-        margin: 0;
-    }
-    .links{
-        justify-content: center;
-    }
-    .start-image-small{
-        display: block;
-    }
-    .start-image-big{
-        display: none;
-    }
+  .start-text-container > h2 {
+    font-size: 8vw;
+    text-align: center;
+  }
+  .start-text-container > h2 > small {
+    font-size: 6vw;
+  }
+  .prox {
+    margin: 0;
+  }
+  .links {
+    justify-content: center;
+  }
+  .start-image-small {
+    display: block;
+  }
+  .start-image-big {
+    display: none;
+  }
 }
 
-@media (max-width:750px){
-    
-
+@media (max-width: 750px) {
 }
